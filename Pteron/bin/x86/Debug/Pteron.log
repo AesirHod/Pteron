@@ -1,4 +1,0 @@
-﻿  RenderControl.cpp
-C:\Users\Andrew\source\repos\Pteron\Talon\source\Talon\Window\Form.h(8,8): warning C4141: 'dllexport': used more than once
-     Creating library C:\Users\Andrew\source\repos\Pteron\bin\x86\Debug\Pteron.lib and object C:\Users\Andrew\source\repos\Pteron\bin\x86\Debug\Pteron.exp
-  Pteron.vcxproj -> C:\Users\Andrew\source\repos\Pteron\bin\x86\Debug\Pteron.dll
