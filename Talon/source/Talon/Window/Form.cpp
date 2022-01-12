@@ -104,7 +104,7 @@ namespace Talon
 			form = static_cast<Form*>(reinterpret_cast<CREATESTRUCT*>(lParam)->lpCreateParams);
 
 			SetLastError(0);
-			if (!SetWindowLongPtr(hWnd, GWL_USERDATA, reinterpret_cast<LONG_PTR>(form)))
+			if (!SetWindowLongPtr(hWnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(form)))
 			{
 				if (GetLastError() != 0)
 				{
@@ -114,7 +114,7 @@ namespace Talon
 		}
 		else
 		{
-			form = reinterpret_cast<Form*>(GetWindowLongPtr(hWnd, GWL_USERDATA));
+			form = reinterpret_cast<Form*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
 		}
 
 		if (form)

@@ -18,6 +18,9 @@
     <ClCompile Include="source\Pteron\Window\RenderControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Pteron\DeviceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Pteron\Window\RenderControl.h">
@@ -27,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source\Pteron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Pteron\DeviceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

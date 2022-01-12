@@ -27,11 +27,27 @@ namespace Talon
 		virtual ~Window();
 
 		virtual void Initialize(HINSTANCE hInst);
+		virtual void ShutDown() {};
 		void SetFocus();
 		void SetName(const WCHAR* name) { m_Params.windowName = name; }
 		void SetDebugName(const WCHAR* debugName) { m_Params.debugName = debugName; }
 		void SetSize(int weight, int height) { m_Params.width = weight, m_Params.height = height; }
 		void SetPosition(int x, int y) { m_Params.x = x, m_Params.y = y; }
+
+		bool GetClientSize(int& x, int&y) const
+		{
+			RECT rect;
+			if (GetClientRect(m_hWnd, &rect))
+			{
+				x = rect.right - rect.left;
+				y = rect.bottom - rect.top;
+				return true;
+			}
+
+			x = 0;
+			y = 0;
+			return false;
+		}
 
 		HWND GetHwnd() const { return m_hWnd; }
 

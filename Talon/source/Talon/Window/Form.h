@@ -5,7 +5,7 @@
 
 namespace Talon
 {
-	class TALON_2_API Form : public Window
+	class TALON_API Form : public Window
 	{
 	public:
 		virtual ~Form();

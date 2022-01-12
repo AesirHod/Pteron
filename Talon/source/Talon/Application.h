@@ -9,13 +9,12 @@ namespace Talon
 	class TALON_API Application
 	{
 	public:
-		virtual ~Application();
-
 		HINSTANCE GetHInst() const { return m_hInst; }
 
 	protected:
 		Application(HINSTANCE hInst);
 		Application(const Application&) = delete;
+		virtual ~Application();
 
 		Application& operator=(const Application&) = delete;
 
